@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Sparkles, Loader2, RefreshCw } from 'lucide-react';
+import { Sparkles, Loader2 } from 'lucide-react';
 import { generateDreamFlavor } from '../services/geminiService';
 import { AiFlavorResponse } from '../types';
 

@@ -1,4 +1,4 @@
-import { GoogleGenAI, Type, Schema } from "@google/genai";
+import { GoogleGenAI, Type } from "@google/genai";
 import { AiFlavorResponse } from '../types';
 
 const apiKey = process.env.API_KEY || '';
@@ -10,7 +10,7 @@ export const generateDreamFlavor = async (inspiration: string): Promise<AiFlavor
     return null;
   }
 
-  const schema: Schema = {
+  const schema = {
     type: Type.OBJECT,
     properties: {
       flavorName: {
